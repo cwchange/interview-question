@@ -1,13 +1,18 @@
 #Solution to question 1
-def out_print():
-       for i in range(1,1001):
-             if (i%15 == 0):
+def out_print(num):
+        temp=1
+        while temp <=num:
+             if (temp%15 == 0):
                   print 'FooBar',
-             elif (i%5 == 0):
+                  temp+=1
+             elif (temp%5 == 0):
                   print 'Bar',
-             elif (i%3 == 0):
+                  temp+=1
+             elif (temp%3 == 0):
                   print 'Foo',
+                  temp+=1
              else:
-                  print i,
+                  print temp,
+                  temp+=1
  
-if __name__ == "__main__": out_print()
+if __name__ == "__main__": out_print(100)
